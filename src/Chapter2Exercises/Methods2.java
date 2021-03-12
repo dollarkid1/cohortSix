@@ -1,6 +1,7 @@
 package Chapter2Exercises;
 
-public class Methods2 {    public static void main(String[] args) {
+public class Methods2 {
+    public static void main(String[] args) {
     print(multiply(943,739));
 
     print(add(723,848));

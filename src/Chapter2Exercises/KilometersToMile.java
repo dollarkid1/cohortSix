@@ -23,6 +23,8 @@ public class KilometersToMile {
             System.out.println("enter amount of KILOMETRES covered or press -1 to exit:");
 
             miles = (int) (0.62137119 * input.nextInt());
+            System.out.println();Methods2.add(64,854);
         }
+
     }
 }
