@@ -30,7 +30,7 @@ public class Random {
                     int userInput1 = input.nextInt();
                     int sum = x + y;
                     result = (sum == userInput1) ? correctAnswerCount++ : wrongAnswerCount++;
-                    //System.out.println(result);
+
                     System.out.println();
                 }
                 case 2 -> {
@@ -39,7 +39,6 @@ public class Random {
                     int userInput2 = input.nextInt();
                     int subtract = x - y;
                     result = (subtract == userInput2) ? correctAnswerCount++ : wrongAnswerCount++;
-                   // System.out.println(result);
                     System.out.println();
                 }
                 case 3 -> {
@@ -48,7 +47,6 @@ public class Random {
                     int userInput3 = input.nextInt();
                     double division = x / y;
                     result = (division == userInput3) ? correctAnswerCount++ : wrongAnswerCount++;
-                   // System.out.println(result);
                     System.out.println();
                 }
                 case 4 -> {
@@ -57,7 +55,6 @@ public class Random {
                     int userInput4 = input.nextInt();
                     int multiply = x * y;
                     result = (multiply == userInput4) ? correctAnswerCount++ : wrongAnswerCount++;
-                   // System.out.println(result);
                     System.out.println();
                 }
             }
