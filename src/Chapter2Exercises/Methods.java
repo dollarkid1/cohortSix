@@ -13,6 +13,7 @@ public class Methods {
         add(843,56);
         add(43,246);
         division(15,2);
+        subtraction(33,24);
     }
 
 
@@ -25,4 +26,5 @@ public class Methods {
     public static void division(float a, float b){
         System.out.println(a/b);
     }
+    public static void subtraction(int a, int b) {System.out.println(a-b);}
 }

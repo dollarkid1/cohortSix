@@ -7,7 +7,6 @@ public class Methods2 {
     print(add(723,848));
     int result = multiply(82,932);
     print(result);
-
     result = add(843,56);
     print(result);
 
