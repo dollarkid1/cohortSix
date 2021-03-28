@@ -1,4 +1,4 @@
-package Chapter2Exercises;
+package ChapterFive;
 
 public class WorldPopulationGrowth {
     public static void main(String[] args) {
