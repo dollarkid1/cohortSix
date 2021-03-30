@@ -7,13 +7,13 @@ public class GuessNumberOneTime {
 
         int answer = (int)(Math.random()*101);
         Scanner input = new Scanner(System.in);
-        System.out.println("guess a magic number between 0 - 100:");
+        System.out.println("guess a magic number between 0 - 100");
 
 
         int guessNumber = -1;
 
         while(guessNumber !=answer) {
-            System.out.print("\nenter your guess");
+            System.out.print("\nenter your guess:");
              guessNumber = input.nextInt();
 
             if (guessNumber == answer)
