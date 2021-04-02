@@ -2,10 +2,11 @@ package Chapter2Exercises;
 
 import java.util.Scanner;
 
-public class Palindrome {
+public class Grade {
 
     public static void main(String[] args) {
         Scanner i = new Scanner(System.in);
+        System.out.println("enter your score:");
         double score = i.nextDouble();
         if  (score >= 90.0){
         System.out.print("A");}
