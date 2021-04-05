@@ -1,4 +1,4 @@
-package Chapter2Exercises;
+package Chapter7;
 
 public class ArrayUsingForEachLoop {
     public static void main(String[] args) {

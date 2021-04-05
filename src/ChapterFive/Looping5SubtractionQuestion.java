@@ -43,9 +43,9 @@ public class Looping5SubtractionQuestion {
         }
 
         long endTime = System.currentTimeMillis();
-        long checkTime = startTime-endTime;
+        long testTime = endTime - startTime;
 
-        System.out.println("Correct count is " + correctAnswer +
-                 "\nTest time is " + checkTime / 1000 + " seconds\n" + output);
+        System.out.println("Correct count is " + correctAnswer +"\n"+
+                 "\nTest time is " + testTime / 1000 + " seconds\n" + output);
     }
 }
