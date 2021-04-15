@@ -6,7 +6,7 @@ public class Test {
 
         int number = 542;
         int temp = number;
-        int remainder = 0;
+        int remainder;
         int reverse=0;
 
         while (temp>0)
