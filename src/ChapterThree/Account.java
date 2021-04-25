@@ -6,31 +6,37 @@ public class Account {
     private double balance;
 
 
-        public Account(String name, double balance){
-            this.name = name;
-            if(balance>0.0)
-                this.balance=balance;
-        }
 
-    public void setName(String name){
-            this.name = name;
-        }
-    public String getName(){
-            return name;
-        }
+    public Account(String name, double balance){
+        this.name = name;
 
-    public void setBalance(double balance){
+        if (balance>0.0)
             this.balance = balance;
     }
+
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void deposit (double depositAmount) {
+        if (depositAmount>0.0)
+        balance = balance + depositAmount;
+    }
+
     public double getBalance() {
         return balance;
     }
-    public void deposit(double depositAmount){
-            if(depositAmount>0.0)
-                balance+=depositAmount;
+
+    public void withdraw(double withdrawAmount){
+        if(withdrawAmount>0)
+        if (withdrawAmount<=balance)
+        balance -= withdrawAmount;
     }
-    public void withdrawal(double withdrawAmount){
-          if(balance > withdrawAmount)
-              balance = balance - withdrawAmount;
-    }
+
+
 }
