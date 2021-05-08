@@ -3,10 +3,10 @@ package Random_Basics;
 public class Learning_Arrays {
     public static void main(String[] args) {
 
-        int[][] x= new int[9][];
+      /*  int[][] x= new int[9][];
         x[0]= new int[17];
         x[1]= new int[9];
-
+*/
 /*
         int [] z = new int[6];
         z[0]= 13;
@@ -29,7 +29,7 @@ public class Learning_Arrays {
         }*/
 
 
-        int[][] v = {{10,20},{30,40,50}};
+      /*  int[][] v = {{10,20},{30,40,50}};
 
         for (int[] i:v) {
             System.out.println(i);
@@ -40,7 +40,7 @@ public class Learning_Arrays {
         int [][] dd=new int[6][3];
         System.out.println(dd.length);
         System.out.println(dd[0].length+ dd[2].length);
-
+*/
      /*
         for (int i = 0; i < v.length; i++) {
             for (int j = 0; j < v[i].length; j++) {
@@ -48,9 +48,8 @@ public class Learning_Arrays {
             }
 
         }*/
-
-
-
+        /*int[][] m = new int[3][];
+        m[0]= new int[2]*/;
 
     }
 }

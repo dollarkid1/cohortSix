@@ -1,4 +1,4 @@
-package turtleGraphics;
+/*package turtleGraphics;
 
 import static turtleGraphics.Direction.*;
 
@@ -49,8 +49,11 @@ public class Turtle {
     }
 
     public void moveForwardBy(int numberOfSteps) {
+        numberOfSteps = numberOfSteps - 1;
         switch (currentDirection){
             case EAST -> currentPosition.increaseColumnPositionBy(5);
+
+
         }
     }
 
@@ -58,4 +61,35 @@ public class Turtle {
     public Position getCurrentPosition() {
         return currentPosition;
     }
+
+
+    public void turnLeft(){
+    switch (currentDirection){
+        case EAST: changeCurrentDirectionTo(NORTH);
+        case WEST : changeCurrentDirectionTo(SOUTH);
+        case SOUTH: changeCurrentDirectionTo(EAST);
+        case NORTH: changeCurrentDirectionTo(WEST);
+    }
+    }
+    public void writeOn(SketchPad sketchPad, int numberOfSteps){
+        if (!isPenUp()){
+            switch (currentDirection){
+                case EAST ->
+                        int counter = 0;
+                        while (counter<numberOfSteps){
+                            var floor = sketchPad.getFloor();
+                            int rowPosition = currentPosition.getRowPosition();
+                            int columnPosition = currentPosition.getColumnPosition();
+                            floor[rowPosition][columnPosition+counter]=1;
+                            counter++;
+                        }
+                        break;*/
+/*
+            }
+        }
+    }
+
+
+
 }
+*/

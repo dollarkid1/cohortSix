@@ -7,7 +7,7 @@ public class TicTacToe {
     static ArrayList<Integer> playerPosition = new ArrayList<>();
     static ArrayList<Integer> computerPosition = new ArrayList<>();
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         char[][] gameBoard = {{' ', '|', ' ', '|', ' '},
                 {'-', '+', '-', '+', '-'}
@@ -19,18 +19,17 @@ public class TicTacToe {
         System.out.println("enter a number from 1 to 9:");
 
         while (true) {
-
             Scanner in = new Scanner(System.in);
             int playersPosition = in.nextInt();
             System.out.println(playersPosition);
-            while (playerPosition.contains(playersPosition) || computerPosition.contains(playersPosition)){
+            while (playerPosition.contains(playersPosition) || computerPosition.contains(playersPosition)) {
                 System.out.print("position has been taken");
                 playersPosition = in.nextInt();
             }
 
             placePiece(gameBoard, playersPosition, "Human");
-            String result =  checkWinner();
-            if(result.length() > 0) {
+            String result = checkWinner();
+            if (result.length() > 0) {
                 System.out.println(result);
                 break;
             }
@@ -38,12 +37,15 @@ public class TicTacToe {
 
             Random rand = new Random();
             int computerPosition = 1 + rand.nextInt(9);
-
+           /* while (computerPosition.contains(playersPosition) || computerPosition.contains(playersPosition)){
+                System.out.print("position has been taken");
+                playersPosition = in.nextInt();
+            }*/
             placePiece(gameBoard, computerPosition, "Computer");
 
             printGameBoard(gameBoard);
             result = checkWinner();
-            if(result.length() > 0) {
+            if (result.length() > 0) {
                 System.out.println(result);
                 break;
             }
@@ -52,7 +54,7 @@ public class TicTacToe {
 
     }
 
-    public static void printGameBoard(char[][] gameBoard) {
+    public static void printGameBoard(char[]... gameBoard) {
         for (char[] row : gameBoard) {
             for (char i : row) {
                 System.out.print(i);
@@ -115,6 +117,6 @@ public class TicTacToe {
                 return "it's a TIE";
         }
 
-            return "";
+        return "";
     }
 }
