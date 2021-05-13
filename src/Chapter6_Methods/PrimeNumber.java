@@ -1,37 +1,26 @@
 package Chapter6_Methods;
 
+import java.util.Scanner;
+
 public class PrimeNumber {
+        private static final Scanner input = new Scanner(System.in);
+    private static void isPrime(){
+        int number = input.nextInt();
+
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0){
+                System.out.println(number + " is not a prime number");
+                break;
+            }
+            else
+                System.out.println(number + "is a prime number");
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println("The first 50 numbers are prime numbers");
-        printPrimeNumbers(50);
-
-    }
-
-    private static void printPrimeNumbers(int numbersOfPrime) {
-        final int NUMBERS_OF_PRIME_PER_LINE = 10;
-        int count =0;
-        int number = 2;
-
-        while (count <= numbersOfPrime){
-            if (isPrime(number)){
-                count++;
-                if (count % NUMBERS_OF_PRIME_PER_LINE == 0){
-                    System.out.printf("%-5s\n", number);
-                }
-                else
-                    System.out.printf("%-5s", number);
-            }
-
+        for (int i = 0; i < 10_000; i++) {
+            isPrime();
         }
 
-        }
-        public static boolean isPrime(int number){
-            for (int i = 2; i <= number / 2; i++) {
-               if ( i % number == 0){
-                   return false;
-                }
-            }
-        return true;
     }
-
 }

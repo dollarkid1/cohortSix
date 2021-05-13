@@ -3,6 +3,7 @@ package Chapter2Exercises;
 import java.util.Scanner;
 
 public class KilometersToMile {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         final double KILOMETRES_PER_HOUR = 0.62137119;
