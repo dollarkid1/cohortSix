@@ -1,6 +1,6 @@
 package Basics;
 
-public class VarARGS {
+public class sumArray {
     public static void A(int... m){
         int total = 0;
         for (int x1: m) {
