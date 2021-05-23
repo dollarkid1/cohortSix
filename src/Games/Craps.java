@@ -1,7 +1,7 @@
 package Games;
 import java.security.SecureRandom;
 
-public class Crabs {
+public class Craps {
     static SecureRandom random = new SecureRandom();
 
     private enum Status { CONTINUE, WON, LOST }
@@ -12,7 +12,7 @@ public class Crabs {
     private static final int YO_LEVEN = 11;
     private static final int BOX_CARS = 12;
 
-    public static void main(String[] args) {
+    public static void play() {
         int myPoint = 0;
         Status gameStatus;
         int sumOfDice = rollDice();
@@ -53,5 +53,8 @@ public class Crabs {
         return sum;
     }
 
+    public static void main(String[] args) {
+        play();
+    }
 
 }
