@@ -3,7 +3,7 @@ package JavaExercises;
 import java.security.SecureRandom;
 
 public class kata {
-    static int[] array = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+    static int[] array = {5,4,3,6,2,1,8,7,9,10,15,11,12,14,13};
     private static final SecureRandom secureRandom = new SecureRandom();
     public static void shuffling(int[] array){
 
@@ -13,9 +13,6 @@ public class kata {
             int a = secureRandom.nextInt(14);
             int b = secureRandom.nextInt(14);
 
-            int p1 = a;
-            int p2 = b;
-
             int num1 = array[a];
             int num2 = array[b];
 
@@ -23,8 +20,8 @@ public class kata {
             num1 = num2;
             num2 = temp;
 
-            array[p1] = num1;
-            array[p2] = num2;
+            array[a] = num1;
+            array[b] = num2;
 
         }
 
@@ -49,22 +46,41 @@ public class kata {
     }
 
 
+    public static void sortAscend(){
+        int temp = 0;
+        for (int i = 0; i < array.length; i++)
+            for (int j = 1+i; j < array.length; j++)
+                if (array[i] > array[j]) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+        for (int i: array)
+            System.out.print(i+"|");
+    }
 
-
-
-
-
-
-
-   public static void max(){
+   public static void sortDesc(){
+        int temp = 0;
+        for (int i = 0; i < array.length; i++)
+            for (int j = i; j < array.length; j++)
+                if (array[i] < array[j]) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+       for (int i: array)
+           System.out.print(i+"|");
 
    }
 
 
     public static void main(String[] args) {
-        max();
-        shuffling(array);
+        sortAscend();
+        System.out.println();
+        sortDesc();
         System.out.println();
         shuffle(array);
+        System.out.println();
+        shuffling(array);
     }
 }

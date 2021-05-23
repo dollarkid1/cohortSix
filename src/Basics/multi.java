@@ -19,5 +19,6 @@ public class multi {
             System.out.println("");
         }
 
+
     }
 }
