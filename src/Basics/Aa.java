@@ -2,7 +2,7 @@ package Basics;
 
 class Aa {
     public static void main(String[] args) {
-        System.out.println("main parent");
+        System.out.println("inputCollection parent");
     }
 }
  class n extends Aa{

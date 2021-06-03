@@ -10,7 +10,7 @@ public class Basics {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String...args) {
     int z=max(83,45);
         System.out.println(z);
     }
