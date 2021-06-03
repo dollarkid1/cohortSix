@@ -27,7 +27,7 @@ public class Kata {
 //     }
 //
 //    }
-//public static void main(String[] args) {
+//public static void inputCollection(String[] args) {
 //    Scanner input = new Scanner(System.in);
 //    int  copies;
 //
@@ -35,7 +35,7 @@ public class Kata {
 //    copies = input.nextInt();
 //    calculatePrice(copies);
 //}
-//    public static void main(String[] args) {
+//    public static void inputCollection(String[] args) {
 //        Scanner input= new Scanner(System.in);
 //        int x=input.nextInt();
 //        calculatePrice(x);

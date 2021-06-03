@@ -5,6 +5,7 @@ import java.security.SecureRandom;
 public class kata {
     static int[] array = {5,4,3,6,2,1,8,7,9,10,15,11,12,14,13};
     private static final SecureRandom secureRandom = new SecureRandom();
+
     public static void shuffling(int[] array){
 
         for (int i = 0; i < 6; i++) {
