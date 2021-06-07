@@ -26,8 +26,7 @@ public class Rectangle {
     }
 
     public void setWidth(float width) {
-//        if ( width < 0.0 || width > 20.0)  throw new IllegalArgumentException( "invalid input");
-//       if (  throw new IllegalArgumentException( "the input most not be higher than 20.0");
+        if ( width < 0.0 || width > 20.0)  throw new IllegalArgumentException( "invalid input");
         if ( width >= 0.0 && width <= 20.0) {
             this.width = width;
         } else {
@@ -35,14 +34,7 @@ public class Rectangle {
         }
     }
 
-  /*  public void calculate(float length, float width){
-        float perimeter ;
-        float area;
-        perimeter = 2 * (length + width);
-        area = length * width;
-        System.out.println("perimeter : " + perimeter);
-        System.out.println("area : " + area);
-    }*/
+
 
     public float perimeter(float length, float width){
        float perimeter = 2 * (this.getWidth() + this.getLength());
