@@ -55,7 +55,6 @@ public class SevenSegmentDisplay {
                 input = input.substring(0,8);
             }
 
-            if (input.charAt(7)== 0){return;}
 
             char[] array = input.toCharArray();
             for (char i : array){
