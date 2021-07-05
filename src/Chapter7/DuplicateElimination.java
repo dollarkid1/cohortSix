@@ -1,6 +1,5 @@
 package Chapter7;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 
 public class DuplicateElimination {
@@ -23,11 +22,10 @@ public class DuplicateElimination {
 
             System.out.println(myList[i]);
     }
-
-
     }
 
     public static void main(String[] args) {
-        inputCollection();
+       // inputCollection();
+
     }
 }
