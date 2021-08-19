@@ -38,10 +38,7 @@ public class Questions {
 
     public static void print() {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> answers = new ArrayList<String>();
-        ArrayList<String> result = new ArrayList<String>();
-
-
+        ArrayList<String> answers = new ArrayList<String>(), result = new ArrayList<String>();
         Questions questions = new Questions();
 
         questions.displayQuestion();

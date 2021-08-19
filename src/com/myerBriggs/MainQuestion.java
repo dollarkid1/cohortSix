@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuestionsUsingOOP {
+public class MainQuestion {
 
    static ArrayList<String> question = new ArrayList<>();
    static int[] store = new int[21];
@@ -52,7 +52,7 @@ public class QuestionsUsingOOP {
     public static void print() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> result = new ArrayList<>();
-        QuestionsUsingOOP quest = new QuestionsUsingOOP();
+        MainQuestion quest = new MainQuestion();
 
         quest.addQuestion();
 

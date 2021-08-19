@@ -36,7 +36,7 @@ public class kata {
         int temp ;
 
         for(int first = 0; first< array.length; first++) {
-            int second = secureRandom.nextInt(15);
+            int second = secureRandom.nextInt(array.length);
             temp = array[first];
             array[first] = array[second];
             array[second] = temp;

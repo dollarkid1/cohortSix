@@ -8,6 +8,7 @@ public class BMICalculator {
     public String gender;
     public double height;
     public double weight;
+   static BMICalculator bmi = new BMICalculator();
 
     public double getWeight() {
         return weight;
@@ -51,16 +52,12 @@ public class BMICalculator {
     }
 
     public static void calculator(){
-        BMICalculator bmi = new BMICalculator();
 
-        final double KILOGRAMS_PER_POUNDS = 0.45359237;
-        final double METERS_PER_INCH = 0.0254;
-
-       double weightInKilograms = bmi.getWeight() * KILOGRAMS_PER_POUNDS ;
-       double heightInMeters = bmi.getHeight() * METERS_PER_INCH;
+       double weightInKilograms = bmi.getWeight();
+       double heightInMeters = bmi.getHeight();
        double bmiResult = weightInKilograms / (heightInMeters * heightInMeters);
 
-        System.out.printf("BMI is %.2f", bmiResult);
+        System.out.printf("BMI is %2.2f\n", bmiResult);
         if (bmiResult < 18.5) System.out.print("Underweight");
         else if (bmiResult < 25) System.out.print("Normal");
         else if (bmiResult < 30) System.out.print("Overweight");
@@ -69,13 +66,12 @@ public class BMICalculator {
     }
     public static void setInfo (){
         Scanner scanner = new Scanner(System.in);
-        BMICalculator bmi = new BMICalculator();
 
         System.out.println("Enter a name");
         String name = scanner.next();
         bmi.setName(name);
 
-        System.out.println("Enter a age");
+        System.out.println("Enter your age");
         int age = scanner.nextInt();
         bmi.setAge(age);
 
@@ -83,11 +79,11 @@ public class BMICalculator {
         String gender = scanner.next();
         bmi.setGender(gender);
 
-        System.out.println("Enter a height");
+        System.out.println("Enter your height in metres");
         double height = scanner.nextDouble();
         bmi.setHeight(height);
 
-        System.out.println("Enter a weight");
+        System.out.println("Enter your weight in kilograms");
         double weight = scanner.nextDouble();
         bmi.setWeight(weight);
         System.out.println("Hello " + bmi.getName());
