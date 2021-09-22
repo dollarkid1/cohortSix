@@ -1,4 +1,4 @@
-package Chapter8_classesAndObject;
+package ClassesAndObject;
 
 public class Date {
     public final String[] MONTHS = {

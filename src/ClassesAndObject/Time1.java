@@ -1,4 +1,4 @@
-package Chapter8_classesAndObject;
+package ClassesAndObject;
 
 public class Time1 {
     private int hour;

@@ -1,4 +1,4 @@
-package Chapter8_classesAndObject;
+package ClassesAndObject;
 
 public class Rectangle {
     private float length = 1;
