@@ -58,14 +58,14 @@ class TVTest {
     void canChangeTvForward(){
         tv1.turnOn();
         assertEquals(30, tv1.setChannel(30));
-        assertEquals(31,tv1.channelUp());
+        assertEquals(31,tv1.getChannelUp());
     }
 
     @Test
     void canChangeTvBackward(){
         tv1.turnOn();
         assertEquals(30, tv1.setChannel(30));
-        assertEquals(29,tv1.channelDown());
+        assertEquals(29,tv1.getChannelDown());
     }
 
 

@@ -26,15 +26,12 @@ public class TV {
         return newVolume;
     }
 
-    public int channelUp(){
-        if (on && channel < 150)
-            channel++;
-        return channel;
+    public void channelUp(){
+       getChannelUp();
+
     }
-    public int channelDown(){
-        if (on && channel > 1)
-            channel--;
-        return channel;
+    public void channelDown(){
+       getChannelDown();
     }
     public int volumeUp(){
         if (on && volumeLevel < 50) volumeLevel++;
@@ -45,4 +42,19 @@ public class TV {
         return volumeLevel;
     }
 
+    public int getChannel() {
+        return channel;
+    }
+
+    public int getChannelUp() {
+        if (on && channel < 150)
+            channel++;
+        return channel;
+    }
+
+    public int getChannelDown() {
+        if (on && channel > 1)
+            channel--;
+        return channel;
+    }
 }
