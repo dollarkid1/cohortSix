@@ -25,11 +25,7 @@ class LoanTest {
                 loan.getTotalPayment());
 
 
-
-
     }
-
-
 
 }
 
