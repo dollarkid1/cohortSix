@@ -1,4 +1,4 @@
-package challengeExercises;
+package challengeExercises.cbank;
 
 public class VipCustomer {
     private String name;

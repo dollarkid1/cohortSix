@@ -1,4 +1,4 @@
-package challengeExercises;
+package challengeExercises.cbank;
 
 public class BankAccount {
     private String accountNumber;
