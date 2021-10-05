@@ -1,4 +1,4 @@
-package challengeExercises.animal;
+package challengeExercises.exercises.animal;
 
 public class Dog extends Animal{
 

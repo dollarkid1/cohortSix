@@ -1,4 +1,4 @@
-package challengeExercises.animal;
+package challengeExercises.exercises.animal;
 
 public class Animal {
     private String name;
